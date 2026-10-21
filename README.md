@@ -25,11 +25,15 @@ Run these commands in an Ubuntu terminal, including Ubuntu under WSL:
 ```bash
 sudo apt update
 sudo apt install -y git build-essential flex bison
+cd ~
 git clone https://github.com/Akshith123-collab/compiler-design-lex-yacc.git
 cd compiler-design-lex-yacc
 make
 make demo
 ```
+
+Clone into your Ubuntu home directory (`cd ~`), which is writable by your user.
+Avoid cloning from `/mnt/c/Windows/System32`.
 
 `make demo` displays `input.c` and compiles it. The sample contains a `while`
 loop, constant arithmetic (`16 * 5`), and loop-invariant expressions. Expect
