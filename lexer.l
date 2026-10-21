@@ -5,7 +5,7 @@
 #include "parser.tab.h"
 %}
 
-%option noyywrap
+%option noyywrap noinput nounput
 
 DIGIT       [0-9]
 LETTER      [a-zA-Z_]

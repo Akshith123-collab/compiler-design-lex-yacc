@@ -109,7 +109,7 @@ if_stmt
           emit_label($1);
       }
 
-    | if_prefix stmt
+    | if_prefix stmt ELSE
       {
           /*
            * The ELSE branch must be skipped after the THEN
@@ -122,9 +122,9 @@ if_stmt
 
           $<text>$ = end;
       }
-      ELSE stmt
+      stmt
       {
-          emit_label($<text>3);
+          emit_label($<text>4);
       }
     ;
 
