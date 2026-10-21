@@ -1,0 +1,27 @@
+# Compiled executable
+compiler
+
+# Generated parser files
+parser.tab.c
+parser.tab.h
+
+# Generated lexer
+lex.yy.c
+
+# Other generated parser files
+parser.output
+
+# Object files
+*.o
+
+# Debugging and temporary files
+core
+core.*
+*.tmp
+
+# Editor settings
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
